@@ -29,3 +29,15 @@ jobs:
 
       - name: 파일 생성
         run: echo "Hello world" > hello.txt
+
+      - name: Github actions 변수 사용하기
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REF
+          echo $GITHUB_TOKEN
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_REPOSITORY_OWNER
+          echo $GITHUB_REPOSITORY_OWNER_NAME
+          echo $GITHUB_REPOSITORY_OWNER_EMAIL
+          echo $GITHUB_REPOSITORY_OWNER_AVATAR_URL
+          echo $GITHUB_REPOSITORY_OWNER_HTML_URL
